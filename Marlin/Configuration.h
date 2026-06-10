@@ -2442,8 +2442,8 @@
 #define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
-  #define Z_SAFE_HOMING_X_POINT 157  // (mm) X point for Z homing - probe position (nozzle will be at 157-39=118, bed center)
-  #define Z_SAFE_HOMING_Y_POINT 157  // (mm) Y point for Z homing - probe position (nozzle will be at 157-10=147, bed center)
+  #define Z_SAFE_HOMING_X_POINT 117  // (mm) X point for Z homing - bed center for 235x235 bed
+  #define Z_SAFE_HOMING_Y_POINT 117  // (mm) Y point for Z homing - bed center for 235x235 bed
   //#define Z_SAFE_HOMING_POINT_ABSOLUTE  // Ignore home offsets (M206) for Z homing position
 #endif
 
