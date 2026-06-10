@@ -1971,7 +1971,7 @@
 #define Y_BED_SIZE 235
 
 // Travel limits (linear=mm, rotational=°) after homing, corresponding to endstop positions.
-#define X_MIN_POS -35
+#define X_MIN_POS -20
 #define Y_MIN_POS -7
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
@@ -2593,10 +2593,10 @@
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
-  // X = -30: Outside bed (bed is 0 to 235) but within soft endstop range (-35 to 235)
+  // X = -20: At edge of bed boundary, outside printing area (bed is 0 to 235)
   // Y = 225: Rear of bed
   // Z = 20: Raised 20mm to avoid contact with bed
-  #define NOZZLE_PARK_POINT { -30, (Y_MAX_POS - 10), 20 }
+  #define NOZZLE_PARK_POINT { -20, (Y_MAX_POS - 10), 20 }
   #define NOZZLE_PARK_MOVE          0   // Park motion: 0 = XY Move, 1 = X Only, 2 = Y Only, 3 = X before Y, 4 = Y before X
   #define NOZZLE_PARK_Z_RAISE_MIN   2   // (mm) Always raise Z by at least this distance
   #define NOZZLE_PARK_XY_FEEDRATE 100   // (mm/s) X and Y axes feedrate (also used for delta Z axis)
