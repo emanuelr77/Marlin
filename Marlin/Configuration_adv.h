@@ -4906,5 +4906,6 @@
   #undef NOZZLE_PARK_POINT
   
   // 2. Seteamos tus coordenadas personalizadas (cama al frente y pico arriba):
-  #define NOZZLE_PARK_POINT { 10, 220, 10 }
+  // X = -30: Outside bed, Y = 220: Rear, Z = 20: Raised
+  #define NOZZLE_PARK_POINT { -30, 220, 20 }
 #endif
