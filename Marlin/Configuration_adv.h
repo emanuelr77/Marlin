@@ -2930,7 +2930,7 @@
     #define MIN_AUTORETRACT             0.1 // (mm) Don't convert E moves under this length
     #define MAX_AUTORETRACT            10.0 // (mm) Don't convert E moves over this length
   #endif
-  #define RETRACT_LENGTH                6   // (mm) Default retract length (increased from 3 for dual drive - prevents nozzle blockage)
+  #define RETRACT_LENGTH                10  // (mm) Default retract length (increased from 3 to 10 for dual drive - prevents nozzle blockage)
   #define RETRACT_LENGTH_SWAP          13   // (mm) Default swap retract length (positive value)
   #define RETRACT_FEEDRATE             25   // (mm/s) Default feedrate for retracting (reduced from 45 for dual drive - matches pause speed)
   #define RETRACT_ZRAISE                0   // (mm) Default retract Z-raise
