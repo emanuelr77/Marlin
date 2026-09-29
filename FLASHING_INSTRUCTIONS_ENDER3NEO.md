@@ -63,7 +63,7 @@ run `M303 E-1 S60 C8` and copy the result into `DEFAULT_BED_KP/KI/KD` in `Config
 - **Pause (M125 / LCD):** Retracts 2 mm at 25 mm/s, parks the nozzle outside the bed, keeps XYZ motors powered.
 - **Change Filament (M600):**
   1. Retract 2 mm, raise Z (at least 20 mm, or +2 mm), park at X -20 / Y 225
-  2. Unload: retract 13 mm, wait 5 s, purge 21 mm, then unload 100 mm
+  2. Unload (same as the Orca end G-code): wait 15 s, then pull 100 mm in one fast move (25 mm/s, 500 mm/s²) to form a clean tip
   3. Wait for the user; hotend stays hot for **300 s** (`PAUSE_PARK_NOZZLE_TIMEOUT`), then turns off and reheats on button press
   4. Load is manual (fast load length = 0): push the filament to the nozzle, then confirm
   5. Purge 50 mm at 3 mm/s, with "Purge more / Continue" menu
